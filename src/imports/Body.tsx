@@ -2890,7 +2890,7 @@ function VideoTooth() {
         playsInline
         onEnded={() => setPlaying(false)}
       >
-        <source src="/videos/tooth-revolution.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}videos/tooth-revolution.mp4`} type="video/mp4" />
       </video>
       {!playing && (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -3028,7 +3028,7 @@ function VideoUrban() {
         playsInline
         onEnded={() => setPlaying(false)}
       >
-        <source src="/videos/urban-relocation.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}videos/urban-relocation.mp4`} type="video/mp4" />
       </video>
       {!playing && (
         <div className="absolute inset-0 flex items-center justify-center">
