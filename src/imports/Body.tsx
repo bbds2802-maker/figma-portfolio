@@ -899,6 +899,126 @@ function Container44() {
   );
 }
 
+function ExperienceItem1() {
+  return (
+    <div className="border-[rgba(255,255,255,0.05)] border-b-[0.667px] border-solid flex items-start justify-between gap-[24px] pb-[20px] pt-[20px] w-full" data-name="Experience Item">
+      <div className="flex flex-col gap-[6px] flex-1 min-w-0">
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#f0f0ee] text-[13.6px]">新加坡 SPH 联合早报</p>
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] not-italic relative text-[#8c8c8c] text-[10.4px]">海外主流媒体：负责品牌IP角色设计与视觉内容产出，参与媒体平台相关视觉物料的设计制作。</p>
+      </div>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[9.6px] tracking-[1.2px] uppercase text-right whitespace-nowrap shrink-0 pt-[2px]">视觉设计实习生</p>
+    </div>
+  );
+}
+
+function ExperienceItem2() {
+  return (
+    <div className="border-[rgba(255,255,255,0.05)] border-b-[0.667px] border-solid flex items-start justify-between gap-[24px] pb-[20px] pt-[20px] w-full" data-name="Experience Item">
+      <div className="flex flex-col gap-[6px] flex-1 min-w-0">
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#f0f0ee] text-[13.6px]">北京无限探索有限公司</p>
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] not-italic relative text-[#8c8c8c] text-[10.4px]">负责AI Agent产品的海外增长策略与执行，参与产品出海运营及用户增长相关工作。</p>
+      </div>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[9.6px] tracking-[1.2px] uppercase text-right whitespace-nowrap shrink-0 pt-[2px]">{`AI Agent产品增长 · 海外实习生`}</p>
+    </div>
+  );
+}
+
+function ExperienceItem3() {
+  return (
+    <div className="border-[rgba(255,255,255,0.05)] border-b-[0.667px] border-solid flex items-start justify-between gap-[24px] pb-[20px] pt-[20px] w-full" data-name="Experience Item">
+      <div className="flex flex-col gap-[6px] flex-1 min-w-0">
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#f0f0ee] text-[13.6px]">{`中国传媒大学校团委 · 数字人项目`}</p>
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] not-italic relative text-[#8c8c8c] text-[10.4px]">负责中国传媒大学数字人工作的前期设计制作与建模运营。</p>
+      </div>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[9.6px] tracking-[1.2px] uppercase text-right whitespace-nowrap shrink-0 pt-[2px]">设计与开发</p>
+    </div>
+  );
+}
+
+function ExperienceItem4() {
+  return (
+    <div className="border-[rgba(255,255,255,0.05)] border-b-[0.667px] border-solid flex items-start justify-between gap-[24px] pb-[20px] pt-[20px] w-full" data-name="Experience Item">
+      <div className="flex flex-col gap-[6px] flex-1 min-w-0">
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#f0f0ee] text-[13.6px]">院团委视觉创意中心</p>
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] not-italic relative text-[#8c8c8c] text-[10.4px]">策划与执行：负责学院多项活动的视觉设计与宣传物料的策划与产出管理。</p>
+      </div>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[9.6px] tracking-[1.2px] uppercase text-right whitespace-nowrap shrink-0 pt-[2px]">部长</p>
+    </div>
+  );
+}
+
+function ExperienceItem5() {
+  return (
+    <div className="flex items-start justify-between gap-[24px] pb-0 pt-[20px] w-full" data-name="Experience Item">
+      <div className="flex flex-col gap-[6px] flex-1 min-w-0">
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#f0f0ee] text-[13.6px]">设计思维协会</p>
+        <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] not-italic relative text-[#8c8c8c] text-[10.4px]">负责校企合作与协会内部运营。</p>
+      </div>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[9.6px] tracking-[1.2px] uppercase text-right whitespace-nowrap shrink-0 pt-[2px]">成员</p>
+    </div>
+  );
+}
+
+function ExperienceList() {
+  return (
+    <div className="flex flex-col w-full max-w-[900px]" data-name="Experience List">
+      <ExperienceItem1 />
+      <ExperienceItem2 />
+      <ExperienceItem3 />
+      <ExperienceItem4 />
+      <ExperienceItem5 />
+    </div>
+  );
+}
+
+function PublishedPaperCallout() {
+  return (
+    <div className="border-[rgba(255,255,255,0.08)] border-solid border-[0.667px] bg-[rgba(255,255,255,0.02)] px-[24px] py-[20px] w-full max-w-[900px]" data-name="Published Paper">
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#0a5fff] text-[8.8px] tracking-[2.64px] uppercase mb-[10px]">{`Published Paper · First Author`}</p>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.6] italic not-italic relative text-[#f0f0ee] text-[11.2px] mb-[8px]">{`"Digital Art Therapy: Adaptive Immersive Sleep Therapy System Using Biofeedback and Mindfulness Relaxation"`}</p>
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative text-[#8c8c8c] text-[9.6px] tracking-[0.5px]">{`CoST 2026 · 第七届文化科技国际学术会议`}</p>
+    </div>
+  );
+}
+
+function WorkExperienceLabel() {
+  return (
+    <div className="content-stretch flex h-[14px] items-center relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#0a5fff] text-[9.6px] tracking-[3.36px] uppercase whitespace-nowrap">Career</p>
+    </div>
+  );
+}
+
+function WorkExperienceHeading() {
+  return (
+    <div className="content-stretch flex h-[52px] items-start relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Bebas_Neue:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#f0f0ee] text-[40px] tracking-[2px] whitespace-nowrap">WORK EXPERIENCE</p>
+    </div>
+  );
+}
+
+function WorkExperienceHeader() {
+  return (
+    <div className="flex flex-col gap-[32px] items-start relative shrink-0 w-full" data-name="Container">
+      <WorkExperienceLabel />
+      <WorkExperienceHeading />
+    </div>
+  );
+}
+
+function WorkExperienceSection() {
+  return (
+    <div className="bg-black relative shrink-0 w-full" data-name="Section">
+      <div aria-hidden="true" className="absolute border-[rgba(255,255,255,0.08)] border-b-[0.667px] border-solid inset-0 pointer-events-none" />
+      <div className="flex flex-col gap-[40px] items-start px-[64px] py-[64px] relative w-full">
+        <WorkExperienceHeader />
+        <ExperienceList />
+        <PublishedPaperCallout />
+      </div>
+    </div>
+  );
+}
+
 function Container41() {
   return (
     <div className="bg-black h-[317px] relative shrink-0 w-full" data-name="Container">
@@ -3160,6 +3280,7 @@ export default function Body() {
       <Section />
       <MarqueeNav />
       <Section1 />
+      <WorkExperienceSection />
       <Container41 />
       <Container45 />
       <Container52 />
