@@ -954,6 +954,22 @@ function VibeCodingIntroParagraph2() {
   );
 }
 
+function SkillpathPromoVideo() {
+  return (
+    <div className="relative shrink-0 w-full max-w-[720px] rounded-[8px] overflow-hidden border-[0.667px] border-[rgba(255,255,255,0.1)] border-solid" data-name="video skillpath promo">
+      <video
+        className="w-full h-auto block"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={`${import.meta.env.BASE_URL}videos/skillpath-promo.mp4`} type="video/mp4" />
+      </video>
+    </div>
+  );
+}
+
 function VibeCodingIntro() {
   return (
     <div className="bg-black relative shrink-0 w-full" data-name="Section">
@@ -962,6 +978,7 @@ function VibeCodingIntro() {
         <VibeCodingTagline />
         <VibeCodingIntroParagraph1 />
         <VibeCodingIntroParagraph2 />
+        <SkillpathPromoVideo />
       </div>
     </div>
   );
@@ -1035,16 +1052,6 @@ function Container50() {
   );
 }
 
-function Container51() {
-  return (
-    <div className="absolute h-[32px] left-[46px] top-[44.75px] w-[162px]" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Bebas_Neue:Regular',sans-serif] leading-[31.68px] left-0 not-italic text-[#f0f0ee] text-[28.8px] top-0 tracking-[0.576px] whitespace-nowrap">Skillpath</p>
-      </div>
-    </div>
-  );
-}
-
 function Container45() {
   return (
     <div className="bg-black h-[691px] relative shrink-0 w-full" data-name="Container">
@@ -1071,7 +1078,6 @@ function Container45() {
         <Container49 />
         <Paragraph />
         <Container50 />
-        <Container51 />
       </div>
     </div>
   );
