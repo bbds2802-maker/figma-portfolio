@@ -892,7 +892,7 @@ function Section1() {
 function Container43() {
   return (
     <div className="content-stretch flex h-[52px] items-start relative shrink-0 w-full" data-name="Container">
-      <p className="font-['Bebas_Neue:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#f0f0ee] text-[40px] tracking-[2px] whitespace-nowrap">{` vibe coding`}</p>
+      <p className="font-['Bebas_Neue:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#f0f0ee] text-[40px] tracking-[2px] whitespace-nowrap">{`Skillpath`}</p>
     </div>
   );
 }
