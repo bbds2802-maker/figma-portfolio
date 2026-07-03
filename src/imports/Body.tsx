@@ -920,12 +920,48 @@ function Container44() {
 function Container41() {
   return (
     <div className="bg-black h-[317px] relative shrink-0 w-full" data-name="Container">
-      <div aria-hidden="true" className="absolute border-[rgba(255,255,255,0.08)] border-b-[0.667px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-end size-full">
         <div className="content-stretch flex items-end justify-between pb-[32.667px] px-[64px] relative size-full">
           <Container42 />
           <Container44 />
         </div>
+      </div>
+    </div>
+  );
+}
+
+function VibeCodingTagline() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.7] not-italic relative text-[#0a5fff] text-[13.6px] max-w-[720px]">{`"Return to focus itself — stay clear-headed in the flood of information."`}</p>
+    </div>
+  );
+}
+
+function VibeCodingIntroParagraph1() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.85] not-italic relative text-[#8c8c8c] text-[11.2px] max-w-[720px]">We all remember a time before the internet moved this fast — no endless push notifications, no bottomless feed of short videos. People could sit still and actually finish something. Today, algorithms know what we want to watch far better than we do, but they've never cared whether we actually learned anything.</p>
+    </div>
+  );
+}
+
+function VibeCodingIntroParagraph2() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Space_Mono:Regular',sans-serif] leading-[1.85] not-italic relative text-[#8c8c8c] text-[11.2px] max-w-[720px]">{`SkillPath is an AI-driven learning planner built to push back against the algorithm. Its core logic isn't "recommend more" — it's "filter out the noise." It blocks social-media distraction, pulls the resources genuinely suited to each learner from across the web, and pairs them with AI-guided learning methodology to help users build a systematic thinking framework — turning fragmented time into long-term compound knowledge. We build a safety net for kids, help young people reclaim their focus, and lower the barrier to learning for older adults.`}</p>
+    </div>
+  );
+}
+
+function VibeCodingIntro() {
+  return (
+    <div className="bg-black relative shrink-0 w-full" data-name="Section">
+      <div aria-hidden="true" className="absolute border-[rgba(255,255,255,0.08)] border-b-[0.667px] border-solid inset-0 pointer-events-none" />
+      <div className="flex flex-col gap-[16px] items-start px-[64px] pt-[32px] pb-[40px] relative w-full">
+        <VibeCodingTagline />
+        <VibeCodingIntroParagraph1 />
+        <VibeCodingIntroParagraph2 />
       </div>
     </div>
   );
@@ -1003,7 +1039,7 @@ function Container51() {
   return (
     <div className="absolute h-[32px] left-[46px] top-[44.75px] w-[162px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Bebas_Neue:Regular',sans-serif] leading-[31.68px] left-0 not-italic text-[#f0f0ee] text-[28.8px] top-0 tracking-[0.576px] whitespace-nowrap">skillpath</p>
+        <p className="absolute font-['Bebas_Neue:Regular',sans-serif] leading-[31.68px] left-0 not-italic text-[#f0f0ee] text-[28.8px] top-0 tracking-[0.576px] whitespace-nowrap">Skillpath</p>
       </div>
     </div>
   );
@@ -3179,6 +3215,7 @@ export default function Body() {
       <MarqueeNav />
       <Section1 />
       <Container41 />
+      <VibeCodingIntro />
       <Container45 />
       <Container52 />
       <Container57 />
