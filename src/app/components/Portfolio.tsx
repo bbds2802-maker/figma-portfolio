@@ -1,10 +1,10 @@
 import Body from "../../imports/Body";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 export function Portfolio() {
   const [scale, setScale] = useState(1);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const updateScale = () => {
       const designWidth = 1719; // 设计稿的宽度
       const viewportWidth = window.innerWidth;
@@ -19,6 +19,16 @@ export function Portfolio() {
     updateScale();
     window.addEventListener('resize', updateScale);
     return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash !== "#digital-human") return;
+
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById("digital-human")?.scrollIntoView({ block: "start" });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   return (
